@@ -1,1 +1,38 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Indice de Masa Corporal</title>
+	<script type="text/javascript" src="assets/js/main.js"></script>
+</head>
+<body>
+	<!-- creamoas un formulario-->
+	<form name="f1" id="f1" action="">
+	<!-- agrupamos elementos dentro de una forma con fieldset-->
+		<fieldset>
+		<!-- asignamos un nombre al marco con legend-->
+		<legend>CALCULA TU INDICE DE MASA CORPORAL</legend>
+			<p>Peso en kg.:
+				<!-- se define el input "caja" donde introducir el dato del peso -->
+				<input type="text" name="peso" id="peso" size="3" maxlength="4">	
+			</p>
+			<p>Altura en cm.:
+				<!-- caja donde van los datos de altura -->
+				<input type="text" name="altura" id="altura" size="3" maxlength="3">
+				<!--definimos un boton que llamara a la funcion que calcula imc-->
+				<input type="button" value="Calcular IMC" onclick="calculaIMC()">
+			</p>
+			<p>IMC:
+				<!--se define una caja donde la funcion va a devolver el valor calculado-->
+				<input type="text" name="imc" size="10" maxlength="15">
+			Leyenda:
+				<!--se define una caja donde la funcion escribira un comentario segun corresponda-->
+				<input type="text" name="leyenda" id="leyenda" size="42">	
+			</p>
+		
+		</fieldset>
+			
+	</form>
+	
+</body>
+</html>
