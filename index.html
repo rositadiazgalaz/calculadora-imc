@@ -1,1 +1,24 @@
-index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora IMC</title>
+	<link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body align="center">
+<header>
+	<div class="subtitulo">
+		<h1>CALCULA TU ÍNDICE DE MASA CORPORAL</h1>	
+	</div>
+</header>
+<div class="form">
+	<input type="text" class="peso" id="pesos" size="40" placeholder="Ingrese su peso en Kilogramos">
+	<input type="text" class="altura" id="alturas" size="40" placeholder="Ingrese su altura en centimetros">
+	<input type="button" class="boton" onclick="calculadora()" value="CALCULAR">
+</div>
+<div class="contenido" align="center">
+	<p id="resultado"></p>
+</div>
+<script src="assets/js/main.js"></script>	
+</body>
+</html>
